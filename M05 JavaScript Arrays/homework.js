@@ -107,18 +107,20 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
-    i=0;
+
    var producto=1;
    if (arguments.length === 0){
       return 0;
-   } else if (arguments.length >= 1){
-      for (i=0; i<arguments.length; i++){
-         producto= producto*arguments[i];
+   } else if (arguments.length === 1){
+      return arguments[0];
+   } else
+      for (var i=0; i<arguments.length; i++){
+         producto = producto*arguments[i];
       }
       return producto;
    }
     
-   }
+   
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
