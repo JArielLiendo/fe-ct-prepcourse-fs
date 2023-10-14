@@ -15,7 +15,7 @@ class Persona {
      
     }
     detalle() {
-      return {
+      return {               //Deben colocarse llaves para poder devolver un objeto
        nombre: this.nombre,
        apellido: this.apellido,
        edad: this.edad,

@@ -44,17 +44,21 @@ function agregarStringInvertida() {
 
    String.prototype.reverse = function() {
 
-       var stringInvertido = "" ;
-       
+       var stringInvertido = "" ; //var string = this.split(""); //tambien funciona convirtiendo el string a array
+       //var stringInvertido = "";                               //y luego ingresarla a la funcion
        for (var i= this.length - 1; i>=0; i--) {
-         stringInvertido = stringInvertido + this[i];
+       stringInvertido = stringInvertido + this[i];
        }
 
       
-      return stringInvertido;
+      return (stringInvertido);
 
 
    }
+
+ /*  String.prototype.reverse = function() {
+      return this.split("").reverse().join("");
+   }*/
 
 
 }
