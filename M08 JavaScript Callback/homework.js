@@ -72,7 +72,7 @@ function map(array, cb) {
       return nuevoArray.push(cb(elem));
    });*/
 
-   var nuevoArray = array.map(function(elem){
+   var nuevoArray = array.map((elem)=>{
       return cb(elem);
    });
 
